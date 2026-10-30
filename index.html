@@ -239,9 +239,40 @@ footer .logo{color:var(--cream)}
 .btn-affiliate,.p-card .btn-affiliate{border-radius:14px;text-align:center;line-height:1.3}
 @media(max-width:760px){.hero-art{aspect-ratio:16/11}}
 @media(max-width:560px){.p-card .btn-affiliate{padding:10px 8px;font-size:.76rem}.why{font-size:.74rem}.p-body{padding:12px}.p-body h3{font-size:.88rem}.p-cat{font-size:.6rem}}
+
+/* v3: phone-friendly product list */
+@media(max-width:600px){
+ .trend-grid{grid-template-columns:1fr;gap:12px}
+ .p-card{flex-direction:row;align-items:stretch}
+ .p-card:hover{transform:none}
+ .p-top{width:76px;height:auto;min-height:100%;flex:none;font-size:2rem}
+ .p-body{padding:14px 14px 16px;gap:6px;min-width:0}
+ .p-body h3{font-size:1rem;line-height:1.3}
+ .p-cat{font-size:.62rem}
+ .p-fix{font-size:.74rem}
+ .why{font-size:.8rem;line-height:1.45}
+ .p-card .btn-affiliate{display:flex;width:100%;margin-top:8px;padding:11px 12px;font-size:.82rem}
+ .hero-badge{left:auto;right:12px;bottom:12px;padding:8px 14px;font-size:.78rem}
+ .hero-badge small{font-size:.62rem}
+ .cat-tile{padding:16px 14px}
+ .cat-tile b{font-size:1rem}
+ .cat-tile small{font-size:.72rem}
+}
+.pic{width:64px;height:64px;display:block}.p-top .pic{width:72px;height:72px}.cat-tile .pic{width:52px;height:52px}@media(max-width:600px){.p-top .pic{width:56px;height:56px}}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-oil" viewBox="0 0 64 64"><rect x="24" y="6" width="16" height="8" rx="2" fill="#3A2A21"/><rect x="28" y="14" width="8" height="6" fill="#E9A23B"/><rect x="16" y="20" width="32" height="38" rx="9" fill="#C1502E"/><rect x="21" y="30" width="22" height="18" rx="3" fill="#FBF3E6"/><path d="M32 33c4 5 4 9 0 11-4-2-4-6 0-11z" fill="#3E5C43"/></symbol>
+<symbol id="i-shampoo" viewBox="0 0 64 64"><rect x="26" y="4" width="16" height="5" rx="2" fill="#3A2A21"/><rect x="31" y="9" width="6" height="8" fill="#3A2A21"/><rect x="18" y="17" width="28" height="43" rx="8" fill="#3E5C43"/><rect x="22" y="28" width="20" height="18" rx="3" fill="#FBF3E6"/><circle cx="32" cy="37" r="5" fill="#E9A23B"/></symbol>
+<symbol id="i-serum" viewBox="0 0 64 64"><ellipse cx="32" cy="10" rx="6" ry="8" fill="#C1502E"/><rect x="26" y="16" width="12" height="6" fill="#3A2A21"/><rect x="20" y="22" width="24" height="36" rx="7" fill="#E9A23B"/><rect x="24" y="32" width="16" height="14" rx="2" fill="#FBF3E6"/></symbol>
+<symbol id="i-pill" viewBox="0 0 64 64"><rect x="18" y="8" width="28" height="10" rx="3" fill="#3A2A21"/><rect x="16" y="18" width="32" height="40" rx="6" fill="#E9A23B"/><rect x="20" y="28" width="24" height="18" rx="3" fill="#FBF3E6"/><rect x="25" y="34" width="14" height="6" rx="3" fill="#C1502E"/></symbol>
+<symbol id="i-comb" viewBox="0 0 64 64"><rect x="6" y="14" width="52" height="14" rx="5" fill="#8C3B1E"/><path d="M12 28v22M20 28v22M28 28v22M36 28v22M44 28v22M52 28v22" stroke="#8C3B1E" stroke-width="4" stroke-linecap="round"/></symbol>
+<symbol id="i-spray" viewBox="0 0 64 64"><rect x="24" y="4" width="18" height="8" rx="2" fill="#3A2A21"/><path d="M42 7h9" stroke="#3A2A21" stroke-width="3"/><rect x="28" y="12" width="10" height="6" fill="#3A2A21"/><rect x="18" y="18" width="28" height="40" rx="8" fill="#6FA8C8"/><rect x="22" y="30" width="20" height="16" rx="3" fill="#FBF3E6"/><circle cx="32" cy="38" r="4" fill="#3E5C43"/></symbol>
+<symbol id="i-jar" viewBox="0 0 64 64"><rect x="12" y="14" width="40" height="10" rx="4" fill="#3A2A21"/><rect x="10" y="24" width="44" height="32" rx="9" fill="#C98FA3"/><rect x="18" y="32" width="28" height="16" rx="3" fill="#FBF3E6"/><circle cx="32" cy="40" r="4" fill="#E9A23B"/></symbol>
+<symbol id="i-pillow" viewBox="0 0 64 64"><rect x="6" y="14" width="52" height="36" rx="10" fill="#C98FA3"/><rect x="12" y="20" width="40" height="24" rx="7" fill="none" stroke="#FBF3E6" stroke-width="2.5" stroke-dasharray="4 4"/><path d="M32 26c3 4 3 8 0 10-3-2-3-6 0-10z" fill="#FBF3E6"/></symbol>
+<symbol id="i-tube" viewBox="0 0 64 64"><path d="M20 6h24l-3 8H23z" fill="#3A2A21"/><rect x="18" y="14" width="28" height="42" rx="6" fill="#E9A23B"/><rect x="22" y="26" width="20" height="16" rx="3" fill="#FBF3E6"/><path d="M32 29c3 3 3 7 0 8-3-1-3-5 0-8z" fill="#3E5C43"/><path d="M18 56h28" stroke="#8C3B1E" stroke-width="4"/></symbol>
+</defs></svg>
 <div class="announce">Free <b>7-Day Hair Fall Reset Guide</b> for women and men. <a href="#guide" style="text-decoration:underline">Get it here</a></div>
 
 <header>
@@ -284,10 +315,10 @@ footer .logo{color:var(--cream)}
       <p>Tap one to see matching products.</p>
     </div>
     <div class="cat-grid four">
-      <a href="#picks" data-f="hf" class="cat-tile t-hf"><span class="ic">🧅</span><b>Hair fall</b><small>Oils, serums, supplements</small></a>
-      <a href="#picks" data-f="dn" class="cat-tile t-dn"><span class="ic">🧴</span><b>Dandruff</b><small>Shampoos and scalp care</small></a>
-      <a href="#picks" data-f="gr" class="cat-tile t-gr"><span class="ic">🌱</span><b>Hair growth</b><small>Serums, tools, oils</small></a>
-      <a href="#picks" data-f="sh" class="cat-tile t-sh"><span class="ic">✨</span><b>Shine and strength</b><small>Masks, serums, protection</small></a>
+      <a href="#picks" data-f="hf" class="cat-tile t-hf"><svg class="pic" viewBox="0 0 64 64" aria-hidden="true"><use href="#i-oil"/></svg><b>Hair fall</b><small>Oils, serums, supplements</small></a>
+      <a href="#picks" data-f="dn" class="cat-tile t-dn"><svg class="pic" viewBox="0 0 64 64" aria-hidden="true"><use href="#i-shampoo"/></svg><b>Dandruff</b><small>Shampoos and scalp care</small></a>
+      <a href="#picks" data-f="gr" class="cat-tile t-gr"><svg class="pic" viewBox="0 0 64 64" aria-hidden="true"><use href="#i-serum"/></svg><b>Hair growth</b><small>Serums, tools, oils</small></a>
+      <a href="#picks" data-f="sh" class="cat-tile t-sh"><svg class="pic" viewBox="0 0 64 64" aria-hidden="true"><use href="#i-jar"/></svg><b>Shine and strength</b><small>Masks, serums, protection</small></a>
     </div>
   </div>
 </section>
@@ -432,11 +463,12 @@ const link = q => {
   if (CONFIG.AMAZON_TAG && !/^YOURTAG/.test(CONFIG.AMAZON_TAG)) u += "&tag=" + encodeURIComponent(CONFIG.AMAZON_TAG);
   return u;
 };
+const I = {"Hair oil":"oil","Shampoo":"shampoo","Scalp mist":"spray","Protection":"spray","Serum":"serum","Supplement":"pill","Tool":"comb","Mask":"jar","Essential":"pillow","Conditioner":"tube"};
 function render() {
   const list = P.filter(p => (st.f === "all" || p[2].split(",").includes(st.f)) && (st.a === "all" || p[3] === "b" || p[3] === st.a));
   document.getElementById("count").textContent = list.length + " pick" + (list.length === 1 ? "" : "s") + " for " + (st.f === "all" ? "all problems" : C[st.f].toLowerCase());
   document.getElementById("grid").innerHTML = list.map(p => {
-    return `<div class="p-card"><div class="p-top t-${p[2].split(",")[0]}"><span aria-hidden="true">${p[6]}</span></div><div class="p-body"><span class="p-cat">${p[1]}</span><h3>${p[0]}</h3><p class="p-fix">Best for: <b>${p[2].split(",").map(c => C[c]).join(", ")}</b></p><p class="why">${p[5]}</p><a class="btn-affiliate" href="${link(p[4])}" target="_blank" rel="sponsored nofollow noopener">Check price on Amazon</a></div></div>`;
+    return `<div class="p-card"><div class="p-top t-${p[2].split(",")[0]}"><svg class="pic" viewBox="0 0 64 64" aria-hidden="true"><use href="#i-${I[p[1]] || "oil"}"/></svg></div><div class="p-body"><span class="p-cat">${p[1]}</span><h3>${p[0]}</h3><p class="p-fix">Best for: <b>${p[2].split(",").map(c => C[c]).join(", ")}</b></p><p class="why">${p[5]}</p><a class="btn-affiliate" href="${link(p[4])}" target="_blank" rel="sponsored nofollow noopener">Check price on Amazon</a></div></div>`;
   }).join("");
   document.querySelectorAll("[data-a].fchip").forEach(b => b.classList.toggle("on", b.dataset.a === st.a));
   document.querySelectorAll("#frow [data-f]").forEach(b => b.classList.toggle("on", b.dataset.f === st.f));
